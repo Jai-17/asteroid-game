@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroids</title>
+    <style>
+        @font-face {
+            font-family: "myFont";
+            src: url("PublicPixel-z84yD.ttf");
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .header{
+            background-color: black;
+            color: white;
+            font-family: myFont;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h2{
+            padding-left: 50px;
+        }
+
+        .hover{
+            cursor: pointer;
+        }
+
+        .hover:hover{
+            color: gray;
+        }
+        
+        .icons{
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        span{
+            padding: 10px;
+        }
+
+        .btn:hover{
+            color: gray;
+        }
+
+        .s{
+            font-size: 12px;
+        }
+
+        .hidden{
+            opacity: 0%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="s hidden">
+            <span>HI: <span class="highScore">0</span></span>
+            <span>Score: <span class="score">0</span></span>
+        </div>
+        <h2 class="hover">START</h2>
+        <div class = "icons hidden"> 
+            <span class="play btn">Play</span>
+            <span class="pause btn">Pause</span>
+            <span class="restart btn">Restart</span>
+        </div>
+    </div>
+    <canvas></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
